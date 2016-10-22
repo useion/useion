@@ -1,0 +1,29 @@
+{
+  "name": "useion",
+  "description": "a tool for inter-language USE case driven modularizatION",
+  "version": "0.0.1",
+  "main": "index.js",
+  "private": true,
+  "scripts": {},
+  "author": "Michal Bystricky <michal.bystricky@stuba.sk>",
+  "dependencies": {
+    "blueimp-tmpl": "^3.4.0",
+    "body-parser": "^1.15.2",
+    "chokidar": "^1.0.1",
+    "colors": "^1.0.3",
+    "cookie-parser": "^1.4.3",
+    "deferred-queue": "^0.5.1",
+    "diff": "^1.3.2",
+    "ejs": "^2.5.1",
+    "express": "^4.14.0",
+    "express-session": "^1.14.0",
+    "markdown-table": "^0.4.0",
+    "minimist": "^1.2.0",
+    "node-compass": "^0.2.4",
+    "orm": "^2.1.24",
+    "orm-transaction": "0.0.2",
+    "promise": "^7.1.1",
+    "sqlite3": "^3.0.5",
+    "xregexp": "^3.1.1"
+  }
+}

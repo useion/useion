@@ -1,0 +1,13 @@
+{
+  "name": "useion-test",
+  "description": "test parser module for useion",
+  "version": "0.0.1",
+  "main": "index.js",
+  "private": true,
+  "scripts": {},
+  "author": "Michal Bystricky <michal.bystricky@stuba.sk>",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  }
+}

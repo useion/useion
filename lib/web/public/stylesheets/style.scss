@@ -1,0 +1,149 @@
+@import "compass/css3";
+
+.container {
+  width: 100%;
+}
+
+body {
+  padding-top: 15px;
+}
+
+#logo {
+  background: #486C88;
+  padding: 10px;
+  display: inline-block;
+  margin: 15px 0;
+
+  a {
+    color: #fff;
+  }
+}
+
+table td, table th {
+  padding: 5px 5px 5px 0;
+}
+
+#uc table thead {
+  display: none;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+pre {
+  padding: 0;
+  background: none;
+  border: 0;
+}
+.toggle {
+  margin-top: 17px;
+  float: right;
+  a {
+    color: #337ab7;
+  }
+  span {
+    font-size: 10px;
+  }
+}
+
+
+
+.link-line {
+  position: absolute;
+  width: 3px;
+  background-color: red;
+  z-index: 100;
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -o-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left; }
+
+.link-line.opacity {
+  zoom: 1;
+  filter: alpha(opacity=20);
+  opacity: 0.2; }
+
+// .link-line:before, .link-line:after {
+//   border-right: 2px solid red;
+//   content: "";
+//   display: block;
+//   height: 9px;
+//   position: absolute;
+//   -moz-transform: rotate(225deg);
+//   -o-transform: rotate(225deg);
+//   -webkit-transform: rotate(225deg);
+//   transform: rotate(225deg);
+//   right: -2px;
+//   top: 100%;
+//   width: 0;
+//   margin-top: -5px; }
+
+.link-line:after {
+  margin-top: -5px;
+  left: -2px;
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg); }
+.link-line {
+  position: absolute;
+  width: 3px;
+  background-color: red;
+  z-index: 100;
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -o-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left; }
+
+.link-line.opacity {
+  zoom: 1;
+  filter: alpha(opacity=20);
+  opacity: 0.2; }
+
+// .link-line:before, .link-line:after {
+//   border-right: 2px solid red;
+//   content: "";
+//   display: block;
+//   height: 9px;
+//   position: absolute;
+//   -moz-transform: rotate(225deg);
+//   -o-transform: rotate(225deg);
+//   -webkit-transform: rotate(225deg);
+//   transform: rotate(225deg);
+//   right: -2px;
+//   top: 100%;
+//   width: 0;
+//   margin-top: -5px; }
+//
+// .link-line:after {
+//   margin-top: -5px;
+//   left: -2px;
+//   -moz-transform: rotate(135deg);
+//   -o-transform: rotate(135deg);
+//   -webkit-transform: rotate(135deg);
+//   transform: rotate(135deg); }
+
+.hljs {
+  background: transparent;
+}
+
+
+span.line {
+  display: inline-block;
+  min-width: 10px;
+  min-height: 10px;
+}
+
+#uc tbody tr td:first-child {
+    min-width: 55px;
+    line-height: inherited;
+}
+
+
+#code span.line.line-start,
+#tests span.line.line-end {
+  width: 0;
+}
