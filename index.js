@@ -72,7 +72,7 @@ var argv = require('minimist')(process.argv.slice(2), {
                     var watcher = new Watcher(project);
                     fileChange.instance = new fileChange.FileChange(project, watcher);
 
-                    if (argv.s || argv.stnchronize) {
+                    if (argv.s || argv.synchronize) {
                         var InitializeController = require("./lib/controller/init"),
                             initCtrl = new InitializeController(db);
 
@@ -81,6 +81,12 @@ var argv = require('minimist')(process.argv.slice(2), {
                             fileChange.getInstance().readStdin();
                         });
                     } else {
+
+                        if (argv.g || argv.git) {
+                            var GitController = require("./lib/controller/git"),
+                                gitCtrl = new GitController(db);
+                            return gitCtrl.run(project);
+                        }
 
                         if (argv.p || argv.puml) {
                             var PUMLController = require("./lib/controller/puml"),

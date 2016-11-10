@@ -20,6 +20,7 @@
     "markdown-table": "^0.4.0",
     "minimist": "^1.2.0",
     "node-compass": "^0.2.4",
+    "nodegit": "^0.16.0",
     "orm": "^2.1.24",
     "orm-transaction": "0.0.2",
     "promise": "^7.1.1",
