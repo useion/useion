@@ -27,7 +27,9 @@ Supported languages in this version are {%=o.supported_languages%}.
 
   -p, --puml                generate and print PlantUML use case diagram and exit
 
-  -g, --git=GIT_URL         assign code changes in commits to code blocks in use case modules, and calculate how much are the code changes applied within the use case modules
+  -g, --git=GIT_URL         show relationships between use cases and commits
+
+  -l=NUMBER                 with -g: process only NUMBER commits
 
   --help                    print this help and exit
 
