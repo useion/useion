@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-node index.js "$@"
+ulimit -v 2500000 #2.5 GB
+node  --expose-gc index.js "$@"
