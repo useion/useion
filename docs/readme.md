@@ -27,9 +27,15 @@ Supported languages in this version are {%=o.supported_languages%}.
 
   -p, --puml                generate and print PlantUML use case diagram and exit
 
-  -g, --git=GIT_URL         show relationships between use cases and commits
+  -g, --git=GIT_URL         show a structural similarity of use cases and commits
 
   -l=NUMBER                 with -g: process only NUMBER commits
+
+  --sl=NUMBER               with -g: skip NUMBER of commits
+
+  --base_path=PATH          with -g: pass the existing PATH to source files of the existing code of use case concerns
+
+  -b, --base                print structure up to 3 levels of the existing code of use case concerns
 
   --help                    print this help and exit
 

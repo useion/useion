@@ -1,5 +1,5 @@
 var argv = require('minimist')(process.argv.slice(2), {
-        boolean: ["s", "synchronize", "w", "watch", "c", "use-case-coverage", "p", "puml", "help", "version"]
+        boolean: ["s", "synchronize", "w", "watch", "c", "use-case-coverage", "p", "puml", "help", "version", "b", "base"]
     }),
     path = require('path'),
     watch_path = argv._.length === 1 ? path.resolve(argv._[0]) : false,
@@ -99,6 +99,14 @@ var argv = require('minimist')(process.argv.slice(2), {
                             fileChange.getInstance().readStdin();
                         });
                     } else {
+
+
+                        if (argv.b || argv.base) {
+                            var BaseController = require("./lib/controller/base"),
+                                bCtrl = new BaseController(db);
+                            return bCtrl.run(project);
+                        }
+
 
                         if (argv.g || argv.git) {
                             var GitController = require("./lib/controller/git"),
