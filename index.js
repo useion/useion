@@ -10,6 +10,7 @@ var argv = require('minimist')(process.argv.slice(2), {
     tmpl = require("blueimp-tmpl"),
 
     model = require('./lib/model')(function(err, db) {
+        "use strict";
 
         var fileChange = require("./lib/file_change");
 

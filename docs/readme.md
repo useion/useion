@@ -1,6 +1,6 @@
 # Name
 
-useion - a tool for inter-language USE case driven modularizatION
+useion - a modularization environment for use case driven and test driven modularization
 
 # Synopsis
 
@@ -8,34 +8,34 @@ useion [OPTION]... PATH...
 
 # Description
 
-Synchronize all the code blocks (and tests) related to a use case, which are gathered along with a use case text in a Markdown file, with the existing code at file system level. Calculate a use case step coverage of how much of use case specification is covered by code blocks (percent of words from the use case texts, which are found in code blocks).
+Synchronize changes between Markdown files and compiled or interpreted code at the level of static file processing, and enforce use case and test representations in code by displaying a use case or test step coverage.
 
 Supported languages in this version are {%=o.supported_languages%}.
 
-  -s, --synchronize         synchronize code blocks in PATH at start
+  -s, --synchronize         synchronize changes in PATH at start
 
   -w, --watch
-      watch PATH for changes, synchronize and print them, and print use case coverage of the affected use cases
+      watch PATH for changes, synchronize them and print use case or test coverage
 
-  -c, --use-case-coverage   calculate and print use case step coverage of all use cases in PATH and exit (see also -s)
+  -c, --use-case-coverage   calculate and print use case or test step coverage of all use cases and tests in PATH and exit (see also -s)
 
   -S, --server=PORT
-      start web app at address <http://localhost:PORT/>, show a use case and the code blocks for the use case side by side, draw lines between them to indicate which steps of the use case are covered by which lines of the code blocks
+      start web app at address <http://localhost:PORT/>, show use cases and code side by side, draw lines between them to indicate which use case steps are covered by which lines of code
 
   -i, --ignore=FILE
-      with  -w, -c, -s: ignore words contained in FILE (one word per line) when calculating use case step coverage
+      with  -w, -c, -s: ignore words contained in FILE (one word per line) when calculating use case or test step coverage
 
   -p, --puml                generate and print PlantUML use case diagram and exit
 
-  -g, --git=GIT_URL         show a structural similarity of use cases and commits
+  -g, --git=GIT_URL         show similarity between use cases and commits in GIT_URL
 
-  -l=NUMBER                 with -g: process only NUMBER commits
+  -l=NUMBER                 with -g: process only NUMBER of commits
 
   --sl=NUMBER               with -g: skip NUMBER of commits
 
-  --base_path=PATH          with -g: pass the existing PATH to source files of the existing code of use case concerns
+  --base_path=PATH          with -g: use different base code for calculating similarity
 
-  -b, --base                print structure up to 3 levels of the existing code of use case concerns
+  -b, --base                print structure of code up to 3 levels
 
   --help                    print this help and exit
 
